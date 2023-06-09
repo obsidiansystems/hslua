@@ -1,7 +1,7 @@
 { mkDerivation, base, bytestring, containers, exceptions
 , hslua-classes, hslua-core, hslua-marshalling
 , hslua-objectorientation, hslua-packaging, lib, mtl, tasty
-, tasty-hslua, tasty-hunit, text
+, tasty-hslua, tasty-hunit, text, hslua-aeson
 }:
 mkDerivation {
   pname = "hslua";
@@ -10,6 +10,7 @@ mkDerivation {
   libraryHaskellDepends = [
     base bytestring containers exceptions hslua-classes hslua-core
     hslua-marshalling hslua-objectorientation hslua-packaging mtl text
+    hslua-aeson
   ];
   homepage = "https://hslua.org/";
   description = "Bindings to Lua, an embeddable scripting language";
